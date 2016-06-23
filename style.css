@@ -1,4 +1,8 @@
 h1 {text-align: center;
 }
-.titre {border: 1px solid black; border-radius: 10px;
+.titre {border: 1px solid black; border-radius: 10px; border-color: white;
+}
+body { background-color: #3366FF; color: white;
+}
+h2 {border: 1px solid black; border-radius: 10px; border-color: white; display: inline
 }
