@@ -7,24 +7,27 @@
 
       <body>
         <h1>Mon Cheat Sheet Vim</h1>
-        <p>Vim Modes</p>
-        <p>Navigation dans un fichier</p>
-        <p>Edition de fichier</p>
-        <p>"­Yan­k" Copier­/Coller</p>
-        <p>Recherche</p>
-        <p>Annuler et recuperer</p>
-        <p>netrw</p>
-        <p>Git - Fugitive</p>
-        <p>Effectuer des changements</p>
-        <p>Windows Management</p>
-        <p>Plugin Manager</p>
-        <p>Delete - Suppression</p>
+        <p>
+          Sommaire : <br />
+          <a href="#VimModes">Vim Modes</a><br />
+        <a href="#Navigation">Navigation dans un fichier</a><br />
+        <a href="#Editiondefichier">Edition de fichier</a><br />
+        <a href="#Yank">"Yan­k" Copier­/Coller</a><br />
+        <a href="#Recherche">Recherche</a><br />
+        <a href="#Annuleretrecuperer">Annuler et recuperer</a><br />
+        <a href="#netrw">netrw</a><br />
+        <a href="#Git-Fugitive">Git - Fugitive</a><br />
+        <a href="#Effectuerdeschangements">Effectuer des changements</a><br />
+        <a href="#WindowsManagement">Windows Management</a><br />
+        <a href="#PluginManager">Plugin Manager</a><br />
+        <a href="#Delete-Suppression">Delete - Suppression</a><br />
+      </p>
 
-        <h2>Vim Modes</h2>
+        <h2 id="VimModes">Vim Modes</h2>
         <p>Une fois Vim lancé plusieurs actions sont possible entre les modes. Le mode normal permet d'utiliser : ainsi que les commandes<br /> de navigation et si vous rechercher à être en mode normal depuis<br /> le mode insertion taper esc.Le mode insertion ce lance depuis le mode normal avec i . En tapant v ou V permet d'activer le mode visuel.
           <br />vim [fichier]- i - (écriture du texte) - esc - :wq!</p>
 
-        <h2>Navigation dans un fichier</h2>
+        <h2 id="Navigation">Navigation dans un fichier</h2>
       <ul><li>haut : ligne précédente</li>
           <li>bas : ligne suivant</li>
           <li>gauche : charactère précédent</li>
@@ -38,7 +41,7 @@
           <li>GG : Se déplacer à la deuxième ligne</li>
           <li>:n : Sauter à la ligne n. Exemple ligne 43 en tapant :43</li></ul>
 
-        <h2>Edition de fichier</h2>
+        <h2 id="Editiondefichier">Edition de fichier</h2>
 <ul>
   <li>:e nomFichier : Ouvre un nouveau fichier. Avec la touche Tab pour explorer le dossier en auto-complétion</li>
   <li>:e /chemin/dossier : Exploration dans l'arbre de navigation, Tab pour l'auto-complétion</li>
@@ -49,40 +52,40 @@
   <li>:!rm nomFichier : Supprime le fichier</li>
   <li>:r nomFichier : Insert nomFichier et son contenu sous le curseur</li>
   <li>ctrl-P : Trouver des fichiers (buffer,MRU,-tags)</li>
-        <h2>"Yank" Copier/Coller</h2>
+        <h2 id="Yank">"Yank" Copier/Coller</h2>
         <ul>
           <li>yw : Copier le mot</li>
           <li>y$ : Copier jusqu'à la fin de phrase</li>
           <li>yy : Copier la ligne</li>
           <li>p : Coller</li></ul>
 
-        <h2>Recherche</h2>
+        <h2 id="Recherche">Recherche</h2>
         <ul>
           <li>/expre-ssion : rechercher une expression</li>
           <li>n : Rechercher l'expression suivant</li>
           <li>N : Rechercher l'expression précédente</li></ul>
 
-        <h2>Annuler et recuperer</h2>
+        <h2 id="Annuleretrecuperer">Annuler et recuperer</h2>
         <ul>
           <li>u : Annule l'action précédente</li>
           <li>U : Annule les actions sur la ligne</li>
           <li>ctrl-R : Annule l'annulation</li></ul>
 
-        <h2>netrw</h2>
+        <h2 id="netrw">netrw</h2>
         <ul>
           <li>ù : Créer un nouveau fichier</li>
           <li>d : Créer un nouveau dossier</li>
           <li>R : Renommer le fichier/dossier sous le curseur</li>
           <li>D : Supprimer le fichier/dossier sous le curseur</li></ul>
 
-        <h2>Git - Fugitive</h2>
+        <h2 id="Git-Fugitive">Git - Fugitive</h2>
         <ul>
           <li>:Gwrite : Correspond à Git add</li>
           <li>:Gread : Correspond à Git checkout</li>
           <li>:Gpush : Correspond à Git push</li>
           <li>:Gpull : Correspond à Git pull</li></ul>
 
-        <h2>Effecctuer des changements</h2>
+        <h2 id="Effectuerdeschangements">Effecctuer des changements</h2>
         <ul>
           <li>~ : Passer la lettre en majuscule / minuscule. Fonctionne en mode Visuel V également</li>
           <li>cw : Modifier le mot</li>
@@ -99,7 +102,7 @@
 
 
 
-        <h2>Windows Management</h2>
+        <h2 id="WindowsManagement">Windows Management</h2>
         <ul>
           <li>:sp : Dédouble la fenêtre courante horizontalement</li>
           <li>:vsp nomFichier : Ouvre le fichier dans une nouvelle fénêtre verticale</li>
@@ -110,7 +113,7 @@
           <li>:PluginSearch : Rechercher un Plugin</li>
           <li>:PluginList : Lister les plugins installés</li></ul>
 
-        <h2>Delete - Suppression</h2>
+        <h2 id="Delete-Suppression">Delete - Suppression</h2>
         <ul>
           <li>dw : Supprimer le mot</li>
           <li>d) : Supprimer jusqu'à la fin de la phrase</li>
