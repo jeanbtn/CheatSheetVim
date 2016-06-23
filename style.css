@@ -2,7 +2,11 @@ h1 {text-align: center;
 }
 .titre {border: 1px solid black; border-radius: 10px; border-color: white;
 }
-body { background-color: #3366FF; color: white;
+body { background-color: #3366FF; color: white; max-width: 960px; margin: auto;
 }
-h2 {border: 1px solid black; border-radius: 10px; border-color: white; display: inline
+h2 {border: 1px solid black; border-radius: 10px; border-color: white; text-align: center;
+}
+li {font-family: Arial;
+}
+p {font-family: Arial; text-align: center;
 }
