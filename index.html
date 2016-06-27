@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" /> <!--Faire apparaître les accents et les symboles-->
+  <link rel="stylesheet" href="style.css" /> <!--Lier mon fichier html à mon fichier css-->
+        <title>cheatsheetvim</title> <!--Nommer mon site en titre de page internet-->
+      </head>
+      <body>
+        <h1 class="titre">Mon Cheat Sheet Vim</h1> <!--Titre de mon site, ajout d'une class "titre"-->
+        <p> <!--Début de mon paragraphe-->
+          Sommaire : <br /> <!--Début de mon sommaire, aller à la ligne-->
+          <a href="#VimModes">Vim Modes</a><br /> <!--Création d'un ancrage pour mon sommaire, aller à la ligne-->
+        <a href="#Navigation">Navigation dans un fichier</a><br /> <!--Ancrage pour le sommaire jusque la ligne 23-->
+        <a href="#Editiondefichier">Edition de fichier</a><br />
+        <a href="#Yank">"Yan­k" Copier­/Coller</a><br />
+        <a href="#Recherche">Recherche</a><br />
+        <a href="#Annuleretrecuperer">Annuler et recuperer</a><br />
+        <a href="#netrw">netrw</a><br />
+        <a href="#Git-Fugitive">Git - Fugitive</a><br />
+        <a href="#Effectuerdeschangements">Effectuer des changements</a><br />
+        <a href="#WindowsManagement">Windows Management</a><br />
+        <a href="#PluginManager">Plugin Manager</a><br />
+        <a href="#Delete-Suppression">Delete - Suppression</a><br /> <!--Fin de mon sommaire-->
+      </p> <!--Fin de mon paragraphe (sommaire)-->
+
+        <h2 id="VimModes">Vim Modes</h2> <!--Titre de mon premier paragraphe, id pour ancrage-->
+        <p>Une fois Vim lancé plusieurs actions sont possible entre les modes. Le mode normal permet d'utiliser : ainsi que les commandes<br /> de navigation et si vous rechercher à être en mode normal depuis<br /> le mode insertion taper esc.Le mode insertion ce lance depuis le mode normal avec i . En tapant v ou V permet d'activer le mode visuel. <!--Paragraphe présentation Vim-->
+          <br />vim [fichier]- i - (écriture du texte) - esc - :wq!</p> <!--Raccourcis pour utilisation Vim, fin de paragraphe-->
+
+        <h2 id="Navigation">Navigation dans un fichier</h2> <!--Titre de mon deuxième paragraphe, id pour ancrage-->
+      <ul><li>haut : ligne précédente</li> <!--Première liste-->
+          <li>bas : ligne suivant</li>
+          <li>gauche : charactère précédent</li>
+          <li>droite : charactère suivant</li>
+          <li>w/b : fwd,bwd mot</li>
+          <li>w/B : fwd,bwd mot entier</li>
+          <li>e/E : renvoi à la fin du mot</li>
+          <li>( / ) : début / fin de la phrase</li>
+          <li>0 / $ : début / fin de la ligne</li>
+          <li>gg : Se déplacer à la première ligne</li>
+          <li>GG : Se déplacer à la deuxième ligne</li>
+          <li>:n : Sauter à la ligne n. Exemple ligne 43 en tapant :43</li></ul>
+
+        <h2 id="Editiondefichier">Edition de fichier</h2> <!--Titre de mon troisième paragraphe, id pour ancrage-->
+<ul> <!--Deuxième liste-->
+  <li>:e nomFichier : Ouvre un nouveau fichier. Avec la touche Tab pour explorer le dossier en auto-complétion</li>
+  <li>:e /chemin/dossier : Exploration dans l'arbre de navigation, Tab pour l'auto-complétion</li>
+  <li>:w nomFichier : Sauvegarde le fichier, spécifier le nom du fichier</li>
+  <li>:q : Quitter Vim; L'éditeur refuse de quitter sans sauvegarder les changements</li>
+  <li>:q! : Forcer à quitter Vim</li>
+  <li>:!ls : Affiche les fichiers du dossier courant</li>
+  <li>:!rm nomFichier : Supprime le fichier</li>
+  <li>:r nomFichier : Insert nomFichier et son contenu sous le curseur</li>
+  <li>ctrl-P : Trouver des fichiers (buffer,MRU,-tags)</li><br />
+
+        <h2 id="Yank">"Yank" Copier/Coller</h2><br /> <!--Titre de mon quatrième paragraphe, id pour ancrage-->
+        <ul> <!--Troisième liste-->
+          <li>yw : Copier le mot</li>
+          <li>y$ : Copier jusqu'à la fin de phrase</li>
+          <li>yy : Copier la ligne</li>
+          <li>p : Coller</li></ul><br />
+
+        <h2 id="Recherche">Recherche</h2><br /> <!--Titre de mon cinquième paragraphe, id pour ancrage-->
+        <ul> <!--Quatrième liste-->
+          <li>/expre-ssion : rechercher une expression</li>
+          <li>n : Rechercher l'expression suivant</li>
+          <li>N : Rechercher l'expression précédente</li></ul><br />
+
+        <h2 id="Annuleretrecuperer">Annuler et recuperer</h2><br /> <!--Titre de mon sixième paragraphe, id pour ancrage-->
+        <ul> <!--Cinquième liste-->
+          <li>u : Annule l'action précédente</li>
+          <li>U : Annule les actions sur la ligne</li>
+          <li>ctrl-R : Annule l'annulation</li></ul><br />
+
+        <h2 id="netrw">netrw</h2><br /> <!--Titre de mon septième paragraphe, id pour ancrage-->
+        <ul> <!--Sixième liste-->
+          <li>ù : Créer un nouveau fichier</li>
+          <li>d : Créer un nouveau dossier</li>
+          <li>R : Renommer le fichier/dossier sous le curseur</li>
+          <li>D : Supprimer le fichier/dossier sous le curseur</li></ul><br />
+
+        <h2 id="Git-Fugitive">Git - Fugitive</h2><br /> <!--Titre de mon huitième paragraphe, id pour ancrage-->
+        <ul> <!--Septième liste-->
+          <li>:Gwrite : Correspond à Git add</li>
+          <li>:Gread : Correspond à Git checkout</li>
+          <li>:Gpush : Correspond à Git push</li>
+          <li>:Gpull : Correspond à Git pull</li></ul><br />
+
+        <h2 id="Effectuerdeschangements">Effectuer des changements</h2><br /> <!--Titre de mon neuvième paragraphe, id pour ancrage-->
+        <ul> <!--Huitième liste-->
+          <li>~ : Passer la lettre en majuscule / minuscule. Fonctionne en mode Visuel V également</li>
+          <li>cw : Modifier le mot</li>
+          <li>c) : Modifier jusqu'à la fin de la phrase</li>
+          <li>c$ : Modifier jusqu'à la fin de la ligne</li>
+          <li>cc : Modifier la ligne entière</li>
+          <li>i/I : insertion début de la ligne courante</li>
+          <li>a/A : ajout en fin de ligne</li>
+          <li>o/O : Ouvrir une ligne avant la ligne courante / ouvrir après la ligne</li>
+          <li>r : Modifier un caractère</li>
+          <li>R : Mode remplacement. Modifier plusieurs caractères</li>
+          <li>:s/aa/bb/g : Modification récursive de la ligne. Remplace aa par bb</li>
+          <li>cs"' : Modifie le mot entouré de "en'</li></ul><br />
+
+
+
+        <h2 id="WindowsManagement">Windows Management</h2><br /> <!--Titre de mon dixième paragraphe, id pour ancrage-->
+        <ul> <!--Neuvième liste-->
+          <li>:sp : Dédouble la fenêtre courante horizontalement</li>
+          <li>:vsp nomFichier : Ouvre le fichier dans une nouvelle fénêtre verticale</li>
+          <li>ctrl-w : Naviguer entre différentes fenêtres</li></ul><br />
+
+        <h2>Plugin Manager</h2><br /> <!---Titre de mon onzième paragraphe, id pour ancrage-->
+        <ul> <!--Dixième liste-->
+          <li>:PluginInstall monPlugin : Installer un plugin avec Vundle</li>
+          <li>:PluginSearch : Rechercher un Plugin</li>
+          <li>:PluginList : Lister les plugins installés</li></ul><br />
+
+        <h2 id="Delete-Suppression">Delete - Suppression</h2><br /> <!--Titre de mon douzième paragraphe, id pour ancrage-->
+        <ul> <!--Onzième liste-->
+          <li>dw : Supprimer le mot</li>
+          <li>d) : Supprimer jusqu'à la fin de la phrase</li>
+          <li>D : Supprimer jusqu'à la fin de la ligne</li>
+          <li>dd : Supprimer la ligne</li>
+          <li>x : Supprimer un caractère après le curseur</li>
+          <li>X : Supprimer un caractère avant le curseur</li></ul>
+
+      </body>
+      </html>
