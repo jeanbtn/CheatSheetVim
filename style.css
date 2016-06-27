@@ -1,12 +1,12 @@
-h1 {text-align: center;
+h1 {text-align: center; <!--Alignement au centre de mon titre du site-->
 }
-.titre {border: 1px solid black; border-radius: 10px; border-color: white;
+.titre {border: 1px solid black; border-radius: 10px; border-color: white; <!--Encadrement de couleur blanc pour ma class "titre"-->
 }
-body { background-color: #3366FF; color: white; max-width: 960px; margin: auto;
+body { background-color: #3366FF; color: white; max-width: 960px; margin: auto; <!--Couleur de fond de mon site, couleur de l'interface, largeur maximale, auto-marge-->
 }
-h2 {border: 1px solid black; border-radius: 10px; border-color: white; text-align: center;
+h2 {border: 1px solid black; border-radius: 10px; border-color: white; text-align: center; display: inline; <!--Encadrement de mes titres de paragraphes uniquement sur la police, alignement au centre de mes titres-->
 }
-li {font-family: Arial;
+li {font-family: Arial; <!--Utilisation de la police Arial pour mes listes-->
 }
-p {font-family: Arial; text-align: center;
+p {font-family: Arial; text-align: center; <!--Utilisation de la police Arial pour mon "p", alignement au centre de mon "p"-->
 }
